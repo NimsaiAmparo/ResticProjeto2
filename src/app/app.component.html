@@ -1,0 +1,21 @@
+<div>
+  <app-logo></app-logo>
+  <div class="container">
+    <h2>Reservar Computador</h2>
+    <mat-form-field appearance="fill">
+      <mat-label>Nome</mat-label>
+      <input matInput [(ngModel)]="nome">
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Horário</mat-label>
+      <input matInput [(ngModel)]="horario">
+    </mat-form-field>
+
+    <button mat-raised-button color="primary" (click)="adicionarReserva()">Fazer Reserva</button>
+
+    <h3>Reservas:</h3>
+    <ul>
+      <li *ngFor="let reserva of reservas">{{ reserva.nome }} - {{ reserva.horario }}</li>
+    </ul>
+  </div>
+</div>

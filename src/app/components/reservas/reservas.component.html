@@ -1,0 +1,20 @@
+<div class="form-container">
+  <h2>Reservar Computador</h2>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Nome</mat-label>
+    <input matInput [(ngModel)]="nome" name="nome" required>
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Horário</mat-label>
+    <input matInput [(ngModel)]="horario" name="horario" required>
+  </mat-form-field>
+
+  <button mat-raised-button color="primary" (click)="adicionarReserva()">Fazer Reserva</button>
+
+  <!--ERA PRA EXIBIR A MENSAGEM-->
+  <div *ngIf="mensagem" class="mensagem" style="background-color: yellow; padding: 10px; margin-top: 10px;">
+    {{ mensagem }}
+  </div>
+</div>

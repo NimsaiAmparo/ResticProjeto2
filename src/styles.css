@@ -1,0 +1,58 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Monaco, monospace;
+}
+
+body {
+    background-image: url('assets/fundo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    max-width: 250px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 50px;
+    background: linear-gradient(135deg, 
+    red, 
+    orange, 
+    yellow, 
+    green, 
+    blue, 
+    indigo, 
+    violet);
+    color: black;
+    font-family: Monaco, monospace;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+}
+
+.form-container {
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.mensagem {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.logo-container {
+    z-index: 1000;
+}
