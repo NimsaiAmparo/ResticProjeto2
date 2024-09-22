@@ -28,9 +28,11 @@ Navegue até o diretório do projeto:
 
 Funcionalidades da Tela de Login
   Campos de Entrada:
+  
   Nome:
   Campo para o usuário inserir seu nome.
   Deve validar se o campo não está vazio antes de permitir o login.
+  
   Horário de Reserva:
   Campo para o usuário inserir o horário de reserva desejado.
   Verifica se não está vazio.
